@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>57845dc9-14ca-4495-b3db-371b1b544c6d</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>RUYIinit</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Linq.Dynamic" />
+    <Compile Include="Global.cs" />
+    <Compile Include="RUYIinit2\Tokens.cs" />
+    <Compile Include="RUYIinit2\ParseCondition.cs" />
+    <Compile Include="RUYIinit2\ParseXML.cs" />
+    <Compile Include="RUYIinit\Form2.cs" />
+    <Compile Include="RUYIinit\HWCheck.cs" />
+    <Compile Include="RUYIinit\Form1.cs" />
+    <Compile Include="RUYIinit\HttpDownForm.cs" />
+    <Compile Include="RUYIinit\VERSION.cs" />
+    <Compile Include="RUYIinit\MODULE.cs" />
+    <Compile Include="RUYIinit\MODULES.cs" />
+    <Compile Include="RUYIinit\LANGUAGE.cs" />
+    <Compile Include="RUYIinit\OSMODE.cs" />
+    <Compile Include="RUYIinit\TOKENS.cs" />
+    <Compile Include="RUYIinit\RootObject.cs" />
+    <Compile Include="RUYIinit\Token.cs" />
+    <Compile Include="RUYIinit\ParseCondition.cs" />
+    <Compile Include="RUYIinit\Program.cs" />
+    <Compile Include="RUYIinit\Properties\Resources.cs" />
+    <Compile Include="RUYIinit\Properties\Settings.cs" />
+    <EmbeddedResource Include="RUYIinit.Form1.resources" />
+    <EmbeddedResource Include="RUYIinit.Form2.resources" />
+    <EmbeddedResource Include="RUYIinit.Properties.Resources.resources" />
+  </ItemGroup>
+</Project>
